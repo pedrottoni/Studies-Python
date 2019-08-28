@@ -1,0 +1,17 @@
+string = input("Digite um valor: ")
+
+tipo = type(string)
+a = string.isalnum()
+b = string.isalpha()
+c = string.isascii()
+d = string.isdecimal()
+e = string.isdigit()
+f = string.isidentifier()
+g = string.islower()
+h = string.isnumeric()
+i = string.isprintable()
+j = string.isspace()
+l = string.istitle()
+m = string.isupper()
+
+print("{} - É um valor {}\n É alphanumerico? {}\n É uma letra? {}\n É um caracter ascii? {}\n É um número decimal? {}\n É um digito? {}\n É um identificador? {}\n Está escrito em minusculo? {}\n É um número? {}\n É printable? {}\n Possui algum espaço? {}\n É um título? {}\n Está em maiusculo? {}".format(string, tipo, a, b, c, d, e, f, g, h, i, j, l, m))
