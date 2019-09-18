@@ -7,5 +7,11 @@ dozen_number = number // 10 % 10  # Returns the dozen
 hundred_number = number // 100 % 10  # Returns the hundred
 thousands_number = number // 1000 % 10  # Returns the thousand
 
+# Transform "number" into string with four spaces
+number_str = str(number).zfill(4)
+
 print(
-    f'Unidade: {unit_number}\nDezena {dozen_number}\nCentena {hundred_number}\nMilhar {thousands_number}')
+    f'\nUsando formula:\nUnidade: {unit_number}\nDezena {dozen_number}\nCentena {hundred_number}\nMilhar {thousands_number}\n')
+
+print(
+    f'Usando str:\nUnidade:{number_str[-1]}\nDezena:{number_str[-2]}\nCentena:{number_str[-3]}\nMilhar:{number_str[-4]}')
