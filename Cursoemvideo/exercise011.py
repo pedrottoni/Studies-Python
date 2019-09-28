@@ -7,4 +7,4 @@ area = width * height
 liter = area / 2
 
 print(
-    f"Sua parede tem a dimenção de {width}m x {height}m e sua área é de {area}m².\nPara pintar essa parede, você vai precisar de {liter}l de tinta")
+    f"Sua parede tem a dimenção de \033[1m{width}m x {height}m\033[m e sua área é de \033[1m{area}m²\033[m.\nPara pintar essa parede, você vai precisar de \033[1m{liter}l\033[m de tinta")

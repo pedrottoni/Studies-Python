@@ -3,8 +3,8 @@
 
 # Forma 1
 userName = input('Digite seu nome:')
-print('Boas vindas,', userName.isalpha())
+print('\033[7;37mBoas vindas,', userName.isalpha())
 
 # Forma 2
 userName = input('Digite seu nome:')
-print('Boas vindas, {}!'.format(userName))
+print('\033[1;31;43mBoas vindas, {}!\033[m'.format(userName))
