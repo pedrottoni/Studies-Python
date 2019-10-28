@@ -15,4 +15,4 @@ print(
 if monthly_installment <= thirty_percent:
     print('Emprestimno concedido')
 else:
-    print(f'Eprestimno negado')
+    print(f'Emprestimno negado')
