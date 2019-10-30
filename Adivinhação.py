@@ -1,3 +1,5 @@
+from random import randint
+
 player_number = int(input('Escolha um número entre 1 e 300: '))
 min = 1
 max = 300
@@ -10,6 +12,7 @@ while computer_number != player_number:
         max = computer_number - 1
     else:
         min = computer_number + 1
+    # computer_number = randint(1, 300)
     attempts += 1
     print(computer_number)
 
