@@ -8,10 +8,10 @@ expression = str(input("Digite sua expressão: "))
 for element in expression:
     if element == "(":
         bracket.append(element)
-    if bracket.count("(") == 0:
-        bracket.append(")")
-        break
     elif element == ")":
+        if bracket.count("(") == 0:
+            bracket.append(")")
+            break
         bracket.pop()
 
 if len(bracket) != 0:
