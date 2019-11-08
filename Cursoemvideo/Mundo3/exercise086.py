@@ -14,8 +14,8 @@ for sub in range(0, 3):
         sleep(.3)
 # Mostrando a Matriz com "for"
 for line in range(0, 3):
-    for coluna in range(0, 3):
-        print(f"[ {list[line][coluna]:2} ]", end=' ')
+    for column in range(0, 3):
+        print(f"[ {list[line][column]:2} ]", end=' ')
     print()
 
 # Ou direto no "print"
