@@ -8,6 +8,7 @@ def factorial(num=0, show=False):
     Keyword Arguments:
         num {int} -- [Numero a ser calculado] (default: {0})
         show {bool} -- [(Opcional) Mostra a conta] (default: {False})
+        return -- [Fatorial de 'num']
     """
     multiplier = 1
 
