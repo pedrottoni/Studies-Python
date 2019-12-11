@@ -1,25 +1,25 @@
-def increase(number=0):
-    return number + ((10 / 100) * number)
+def string_to_float(number="0"):
+    float_number = float(number.replace(",", "."))
+    return float_number
 
 
-def decrease(number=0):
-    return number - ((10 / 100) * number)
+def increase(number="0"):
+    return string_to_float(number) + ((10 / 100) * string_to_float(number))
 
 
-def double(number=0):
-    return number * 2
+def decrease(number="0"):
+    return string_to_float(number) - ((10 / 100) * string_to_float(number))
 
 
-def half(number=0):
-    return number / 2
+def double(number="0"):
+    return string_to_float(number) * 2
 
 
-def string_to_float(number):
-    number = float(number.replace(",", "."))
-    return number
+def half(number="0"):
+    return string_to_float(number) / 2
 
 
-def coin(function):
+def coin(function="0"):
     sign = "R$" + str(function)
     sign = sign.replace(".", ",")
     sign = sign.split(",")
